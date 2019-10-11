@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,14 @@
 		D4BD36BD2350174000096E6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BD36BB2350174000096E6D /* LaunchScreen.storyboard */; };
 		D4BD36C82350174000096E6D /* TWWeChatMomentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD36C72350174000096E6D /* TWWeChatMomentsTests.swift */; };
 		D4BD36D32350174000096E6D /* TWWeChatMomentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD36D22350174000096E6D /* TWWeChatMomentsUITests.swift */; };
+		D4BD36E42350244400096E6D /* TWTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD36E32350244400096E6D /* TWTabBarController.swift */; };
+		D4BD36E62350248400096E6D /* TWNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD36E52350248400096E6D /* TWNavigationController.swift */; };
+		D4BD36EE2350260900096E6D /* TWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD36ED2350260900096E6D /* TWBaseViewController.swift */; };
+		D4BD36F02350264200096E6D /* TWMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD36EF2350264200096E6D /* TWMessagesViewController.swift */; };
+		D4BD36F22350265F00096E6D /* TWContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD36F12350265F00096E6D /* TWContactsViewController.swift */; };
+		D4BD36F42350267500096E6D /* TWDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD36F32350267500096E6D /* TWDiscoverViewController.swift */; };
+		D4BD36F62350268800096E6D /* TWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD36F52350268800096E6D /* TWMeViewController.swift */; };
+		D4BD36F9235052B800096E6D /* TWColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BD36F8235052B800096E6D /* TWColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +65,14 @@
 		D4BD36CE2350174000096E6D /* TWWeChatMomentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWWeChatMomentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BD36D22350174000096E6D /* TWWeChatMomentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWWeChatMomentsUITests.swift; sourceTree = "<group>"; };
 		D4BD36D42350174000096E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4BD36E32350244400096E6D /* TWTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWTabBarController.swift; sourceTree = "<group>"; };
+		D4BD36E52350248400096E6D /* TWNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWNavigationController.swift; sourceTree = "<group>"; };
+		D4BD36ED2350260900096E6D /* TWBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWBaseViewController.swift; sourceTree = "<group>"; };
+		D4BD36EF2350264200096E6D /* TWMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWMessagesViewController.swift; sourceTree = "<group>"; };
+		D4BD36F12350265F00096E6D /* TWContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWContactsViewController.swift; sourceTree = "<group>"; };
+		D4BD36F32350267500096E6D /* TWDiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWDiscoverViewController.swift; sourceTree = "<group>"; };
+		D4BD36F52350268800096E6D /* TWMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWMeViewController.swift; sourceTree = "<group>"; };
+		D4BD36F8235052B800096E6D /* TWColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWColorExtension.swift; sourceTree = "<group>"; };
 		E3351F3D903A7949E18A552C /* Pods_TWWeChatMomentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWWeChatMomentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95D17F42CE5D32565AF0133 /* Pods-TWWeChatMomentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWWeChatMomentsUITests.debug.xcconfig"; path = "Target Support Files/Pods-TWWeChatMomentsUITests/Pods-TWWeChatMomentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +125,6 @@
 				F95D17F42CE5D32565AF0133 /* Pods-TWWeChatMomentsUITests.debug.xcconfig */,
 				2902F4981C04E730380FB43F /* Pods-TWWeChatMomentsUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,6 +153,7 @@
 		D4BD36B12350174000096E6D /* TWWeChatMoments */ = {
 			isa = PBXGroup;
 			children = (
+				D4BD36E7235024ED00096E6D /* Sources */,
 				D4BD36B22350174000096E6D /* AppDelegate.swift */,
 				D4BD36B42350174000096E6D /* ViewController.swift */,
 				D4BD36B62350174000096E6D /* Main.storyboard */,
@@ -164,6 +180,77 @@
 				D4BD36D42350174000096E6D /* Info.plist */,
 			);
 			path = TWWeChatMomentsUITests;
+			sourceTree = "<group>";
+		};
+		D4BD36E22350244400096E6D /* MainFrame */ = {
+			isa = PBXGroup;
+			children = (
+				D4BD36E32350244400096E6D /* TWTabBarController.swift */,
+				D4BD36E52350248400096E6D /* TWNavigationController.swift */,
+				D4BD36ED2350260900096E6D /* TWBaseViewController.swift */,
+			);
+			path = MainFrame;
+			sourceTree = "<group>";
+		};
+		D4BD36E7235024ED00096E6D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D4BD36F72350527700096E6D /* Extension */,
+				D4BD36EC235025CB00096E6D /* Network */,
+				D4BD36E22350244400096E6D /* MainFrame */,
+				D4BD36EA2350254600096E6D /* Messages */,
+				D4BD36E92350254600096E6D /* Contacts */,
+				D4BD36E82350254600096E6D /* Discover */,
+				D4BD36EB2350254600096E6D /* Me */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D4BD36E82350254600096E6D /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				D4BD36F32350267500096E6D /* TWDiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		D4BD36E92350254600096E6D /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				D4BD36F12350265F00096E6D /* TWContactsViewController.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		D4BD36EA2350254600096E6D /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				D4BD36EF2350264200096E6D /* TWMessagesViewController.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		D4BD36EB2350254600096E6D /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				D4BD36F52350268800096E6D /* TWMeViewController.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		D4BD36EC235025CB00096E6D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D4BD36F72350527700096E6D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D4BD36F8235052B800096E6D /* TWColorExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,7 +475,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4BD36B52350174000096E6D /* ViewController.swift in Sources */,
+				D4BD36F02350264200096E6D /* TWMessagesViewController.swift in Sources */,
+				D4BD36F42350267500096E6D /* TWDiscoverViewController.swift in Sources */,
+				D4BD36F62350268800096E6D /* TWMeViewController.swift in Sources */,
+				D4BD36EE2350260900096E6D /* TWBaseViewController.swift in Sources */,
 				D4BD36B32350174000096E6D /* AppDelegate.swift in Sources */,
+				D4BD36F9235052B800096E6D /* TWColorExtension.swift in Sources */,
+				D4BD36E62350248400096E6D /* TWNavigationController.swift in Sources */,
+				D4BD36E42350244400096E6D /* TWTabBarController.swift in Sources */,
+				D4BD36F22350265F00096E6D /* TWContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
